@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shopping Cart - Promo code</title>
+   
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+</head>
+<!--Body starts Here-->
+<body>
+    <header>
+        <!--Navbar-->
+        <a href="#" class="logo">T E C H I E</a>
+        <div id="cart-icon">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="cart-item-count"></span>
+        </div>
+    </header>
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!--<div class="cart-box">
+                <img src="images/product1.jpg" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Product 1</h2>
+                    <span class="cart-price">$100</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                        
+                    </div>
+                </div>
+                <i class="fa-regular fa-trash-can cart-remove"></i>
+            </div>-->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+            <div class="discount">
+                <input type="text" id="promo-code" placeholder="Promo Code">
+                <button id="apply-promo">Apply</button>
+                <span class="discount-amount">0</span>
+            </div>
+            <div class="final-total">Total after discount: <span class="final-total">$0.00</span></div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <div class="promo-message"></div>
+        <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
+
+    <section class="shop">
+        <h1 class="section-title">Products</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product1.jpg">
+                </div>
+                <h2 class="product-title">Product 1</h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product2.jpg">
+                </div>
+                <h2 class="product-title">Product 2</h2>
+                <div class="price-and-cart">
+                    <span class="price">$10</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product3.jpg">
+                </div>
+                <h2 class="product-title">Product 3</h2>
+                <div class="price-and-cart">
+                    <span class="price">$34</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product4.jpg">
+                </div>
+                <h2 class="product-title">Product 4</h2>
+                <div class="price-and-cart">
+                    <span class="price">$45</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product5.jpg">
+                </div>
+                <h2 class="product-title">Product 5</h2>
+                <div class="price-and-cart">
+                    <span class="price">$54</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product6.jpg">
+                </div>
+                <h2 class="product-title">Product 6</h2>
+                <div class="price-and-cart">
+                    <span class="price">$60</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product7.jpg">
+                </div>
+                <h2 class="product-title">Product 7</h2>
+                <div class="price-and-cart">
+                    <span class="price">$70</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="images/product8.jpg">
+                </div>
+                <h2 class="product-title">Product 8</h2>
+                <div class="price-and-cart">
+                    <span class="price">$80</span>
+                    <i class="fas fa-shopping-cart add-cart"></i>
+                </div>
+                <p>Benefits of Buying Directly From Sony
+
+                    Easy Returns
+                    Free Shipping
+                    Starting 0% APR with Affirm
+                    Up to 5% Back in My Sony Points
+                    Pickup As Early As Today</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
